@@ -196,15 +196,38 @@ const server = createServer(async (req, res) => {
       if (!username) return j(res, { code: -1, msg: "username required" }, 400);
       const ua = { "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" };
       if (p === "/follower-count") {
-        const r = await fetch(`https://www.tikwm.com/api/user/info?unique_id=${encodeURIComponent(username)}`, { headers: ua });
-        const d = await r.json().catch(() => null);
-        const u = d && d.data && d.data.user, s = d && d.data && d.data.stats;
-        if (!u) return j(res, { code: -1, msg: "user not found or source unavailable" }, 502);
+        try {
+          const r = await fetch(`https://www.tikwm.com/api/user/info?unique_id=${encodeURIComponent(username)}`, { headers: ua });
+          const d = await r.json().catch(() => null);
+          const u = d && d.data && d.data.user, s = d && d.data && d.data.stats;
+          if (u)
+            return j(res, {
+              code: 0, username: u.uniqueId, nickname: u.nickname, verified: !!u.verified,
+              private_account: !!u.privateAccount, signature: u.signature || "",
+              followers: s.followerCount, following: s.followingCount,
+              videos: s.videoCount, likes: s.heartCount,
+            });
+        } catch { /* tikwm unreachable/blocked -> fall through to the TikTok page itself */ }
+        // Fallback: read the stats straight from the TikTok profile page (no third party).
+        const page = await fetch(`https://www.tiktok.com/@${encodeURIComponent(username)}`, {
+          headers: { "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" },
+        });
+        const html = await page.text();
+        const m = html.match(/<script id="__UNIVERSAL_DATA_FOR_REHYDRATION__" type="application\/json">([\s\S]*?)<\/script>/);
+        let ui = null;
+        if (m) {
+          try {
+            const data = JSON.parse(m[1]);
+            ui = data?.["__DEFAULT_SCOPE__"]?.["webapp.user-detail"]?.userInfo || null;
+          } catch {}
+        }
+        if (!ui || !ui.user) return j(res, { code: -1, msg: "user not found or source unavailable" }, 502);
         return j(res, {
-          code: 0, username: u.uniqueId, nickname: u.nickname, verified: !!u.verified,
-          private_account: !!u.privateAccount, signature: u.signature || "",
-          followers: s.followerCount, following: s.followingCount,
-          videos: s.videoCount, likes: s.heartCount,
+          code: 0, username: ui.user.uniqueId, nickname: ui.user.nickname, verified: !!ui.user.verified,
+          private_account: !!ui.user.privateAccount, signature: ui.user.signature || "",
+          followers: ui.stats.followerCount, following: ui.stats.followingCount,
+          videos: ui.stats.videoCount, likes: ui.stats.heartCount,
+          source: "tiktok.com",
         });
       }
       const r = await fetch(`https://www.tikwm.com/api/user/posts?unique_id=${encodeURIComponent(username)}&count=30`, { headers: ua });

@@ -1,0 +1,352 @@
+[
+ {
+  "level": 1,
+  "name": "Newcomer I",
+  "coins": 1,
+  "usd": 0.02,
+  "perks": "Default badge"
+ },
+ {
+  "level": 2,
+  "name": "Newcomer II",
+  "coins": 8,
+  "usd": 0.09,
+  "perks": "First level badge"
+ },
+ {
+  "level": 3,
+  "name": "Newcomer III",
+  "coins": 18,
+  "usd": 0.19,
+  "perks": "Comment color unlock"
+ },
+ {
+  "level": 4,
+  "name": "Newcomer IV",
+  "coins": 34,
+  "usd": 0.36,
+  "perks": "Enter effect bronze tier"
+ },
+ {
+  "level": 5,
+  "name": "Bronze I",
+  "coins": 56,
+  "usd": 0.59,
+  "perks": "Bronze badge unlock"
+ },
+ {
+  "level": 6,
+  "name": "Bronze II",
+  "coins": 90,
+  "usd": 0.94,
+  "perks": "Bronze frame"
+ },
+ {
+  "level": 7,
+  "name": "Bronze III",
+  "coins": 140,
+  "usd": 1.46,
+  "perks": "Animated bronze frame"
+ },
+ {
+  "level": 8,
+  "name": "Bronze IV",
+  "coins": 220,
+  "usd": 2.29,
+  "perks": "Bronze elite frame"
+ },
+ {
+  "level": 9,
+  "name": "Silver I",
+  "coins": 340,
+  "usd": 3.54,
+  "perks": "Silver badge unlock"
+ },
+ {
+  "level": 10,
+  "name": "Silver II",
+  "coins": 530,
+  "usd": 5.52,
+  "perks": "Silver frame + comment glow"
+ },
+ {
+  "level": 11,
+  "name": "Silver III",
+  "coins": 820,
+  "usd": 8.53,
+  "perks": "Silver animated frame"
+ },
+ {
+  "level": 12,
+  "name": "Silver IV",
+  "coins": 1260,
+  "usd": 13.11,
+  "perks": "Silver elite frame"
+ },
+ {
+  "level": 13,
+  "name": "Gold I",
+  "coins": 1920,
+  "usd": 19.97,
+  "perks": "Gold badge unlock"
+ },
+ {
+  "level": 14,
+  "name": "Gold II",
+  "coins": 2480,
+  "usd": 25.8,
+  "perks": "Gold frame + entrance highlight"
+ },
+ {
+  "level": 15,
+  "name": "Gold III",
+  "coins": 4340,
+  "usd": 45.14,
+  "perks": "Gold animated frame"
+ },
+ {
+  "level": 16,
+  "name": "Gold IV",
+  "coins": 6420,
+  "usd": 66.77,
+  "perks": "Gold elite frame"
+ },
+ {
+  "level": 17,
+  "name": "Platinum I",
+  "coins": 9280,
+  "usd": 96.52,
+  "perks": "Platinum badge unlock"
+ },
+ {
+  "level": 18,
+  "name": "Platinum II",
+  "coins": 13500,
+  "usd": 140.4,
+  "perks": "Platinum frame"
+ },
+ {
+  "level": 19,
+  "name": "Platinum III",
+  "coins": 19400,
+  "usd": 201.76,
+  "perks": "Platinum animated frame"
+ },
+ {
+  "level": 20,
+  "name": "Platinum IV",
+  "coins": 27800,
+  "usd": 289.12,
+  "perks": "Platinum elite frame + custom entry FX"
+ },
+ {
+  "level": 21,
+  "name": "Diamond I",
+  "coins": 39600,
+  "usd": 411.84,
+  "perks": "Diamond badge unlock"
+ },
+ {
+  "level": 22,
+  "name": "Diamond II",
+  "coins": 54600,
+  "usd": 567.84,
+  "perks": "Diamond frame"
+ },
+ {
+  "level": 23,
+  "name": "Diamond III",
+  "coins": 75800,
+  "usd": 788.32,
+  "perks": "Diamond animated frame"
+ },
+ {
+  "level": 24,
+  "name": "Diamond IV",
+  "coins": 105000,
+  "usd": 1092.0,
+  "perks": "Diamond elite + top-gifter rail priority"
+ },
+ {
+  "level": 25,
+  "name": "Crown I",
+  "coins": 144000,
+  "usd": 1497.6,
+  "perks": "Crown badge unlock"
+ },
+ {
+  "level": 26,
+  "name": "Crown II",
+  "coins": 196000,
+  "usd": 2038.4,
+  "perks": "Crown frame"
+ },
+ {
+  "level": 27,
+  "name": "Crown III",
+  "coins": 265000,
+  "usd": 2756.0,
+  "perks": "Crown animated frame"
+ },
+ {
+  "level": 28,
+  "name": "Crown IV",
+  "coins": 357000,
+  "usd": 3712.8,
+  "perks": "Crown elite + premium entry VFX"
+ },
+ {
+  "level": 29,
+  "name": "Royal Crown I",
+  "coins": 578000,
+  "usd": 6011.2,
+  "perks": "Royal Crown badge unlock"
+ },
+ {
+  "level": 30,
+  "name": "Royal Crown II",
+  "coins": 637000,
+  "usd": 6624.8,
+  "perks": "Royal Crown frame"
+ },
+ {
+  "level": 31,
+  "name": "Royal Crown III",
+  "coins": 845000,
+  "usd": 8788.0,
+  "perks": "Royal Crown animated frame"
+ },
+ {
+  "level": 32,
+  "name": "Royal Crown IV",
+  "coins": 1120000,
+  "usd": 11648.0,
+  "perks": "Royal Crown elite frame"
+ },
+ {
+  "level": 33,
+  "name": "King I",
+  "coins": 1470000,
+  "usd": 15288.0,
+  "perks": "King badge unlock"
+ },
+ {
+  "level": 34,
+  "name": "King II",
+  "coins": 1920000,
+  "usd": 19968.0,
+  "perks": "King frame"
+ },
+ {
+  "level": 35,
+  "name": "King III",
+  "coins": 2500000,
+  "usd": 26000.0,
+  "perks": "King entrance animation"
+ },
+ {
+  "level": 36,
+  "name": "King IV",
+  "coins": 3230000,
+  "usd": 33592.0,
+  "perks": "King elite frame + cosmic aura"
+ },
+ {
+  "level": 37,
+  "name": "Emperor I",
+  "coins": 4180000,
+  "usd": 43472.0,
+  "perks": "Emperor badge unlock"
+ },
+ {
+  "level": 38,
+  "name": "Emperor II",
+  "coins": 5430000,
+  "usd": 56472.0,
+  "perks": "Emperor frame"
+ },
+ {
+  "level": 39,
+  "name": "Emperor III",
+  "coins": 6890000,
+  "usd": 71656.0,
+  "perks": "Emperor animated frame"
+ },
+ {
+  "level": 40,
+  "name": "Emperor IV",
+  "coins": 8780000,
+  "usd": 91312.0,
+  "perks": "Emperor elite frame"
+ },
+ {
+  "level": 41,
+  "name": "Cosmos I",
+  "coins": 11200000,
+  "usd": 116480.0,
+  "perks": "Cosmos badge unlock"
+ },
+ {
+  "level": 42,
+  "name": "Cosmos II",
+  "coins": 14100000,
+  "usd": 146640.0,
+  "perks": "Cosmos frame"
+ },
+ {
+  "level": 43,
+  "name": "Cosmos III",
+  "coins": 17800000,
+  "usd": 185120.0,
+  "perks": "Cosmos animated aura"
+ },
+ {
+  "level": 44,
+  "name": "Cosmos IV",
+  "coins": 22300000,
+  "usd": 231920.0,
+  "perks": "Cosmos elite aura"
+ },
+ {
+  "level": 45,
+  "name": "Universe I",
+  "coins": 30000000,
+  "usd": 312000.0,
+  "perks": "Universe badge unlock"
+ },
+ {
+  "level": 46,
+  "name": "Universe II",
+  "coins": 37500000,
+  "usd": 390000.0,
+  "perks": "Universe frame"
+ },
+ {
+  "level": 47,
+  "name": "Universe III",
+  "coins": 47500000,
+  "usd": 494000.0,
+  "perks": "Universe animated aura"
+ },
+ {
+  "level": 48,
+  "name": "Universe IV",
+  "coins": 65700000,
+  "usd": 683280.0,
+  "perks": "Universe elite aura"
+ },
+ {
+  "level": 49,
+  "name": "Legend",
+  "coins": 75000000,
+  "usd": 780000.0,
+  "perks": "Legend tier - top 0.001% of all gifters"
+ },
+ {
+  "level": 50,
+  "name": "Mythic",
+  "coins": 97500000,
+  "usd": 1014000.0,
+  "perks": "Mythic tier - max public gifter level"
+ }
+]
